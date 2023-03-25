@@ -2,9 +2,9 @@ This project has a docker-compose file, that do everything needed to run this pr
 
 The api is running on: localhost:3000
 
-the RabbitMQ web client is running on: localhost:15672
+The RabbitMQ web client is running on: localhost:15672
 
-you can find a postman collection at .docs folder! 
+You can find a postman collection at .docs folder! 
 
 ## Running the app
 
@@ -19,7 +19,7 @@ The tests can only be run after the app is running, so you need to run the 'Runn
 
 ```bash
 # unit tests
-$ docker exec -it {docker container id/name} npm run test
+$ docker exec -it {docker container id} npm run test
 ```
 
 must be something like: 
