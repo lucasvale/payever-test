@@ -19,10 +19,9 @@ services:
       target: development
     volumes:
       - .:/usr/src/app
-      - /usr/src/app/node_modules/
     ports:
       - "3000:3000"
-    command: npm run start:dev
+    command: /usr/src/app/entrypoint.sh
     env_file:
       - .env
     depends_on:

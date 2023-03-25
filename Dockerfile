@@ -1,11 +1,14 @@
-FROM node:18-alpine As development
+FROM node:18 As development
 
-WORKDIR /usr/src/app
+RUN mkdir /usr/src/cache
 
-COPY package*.json ./
+WORKDIR /usr/src/cache
+
+COPY package.json ./
+COPY package-lock.json ./
 
 RUN npm install --only=development
 
-COPY . .
+WORKDIR /usr/src/app
 
-RUN npm run build
+COPY . .
