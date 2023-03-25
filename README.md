@@ -19,11 +19,5 @@ The tests can only be run after the app is running, so you need to run the 'Runn
 
 ```bash
 # unit tests
-$ docker exec -it {docker container id} npm run test
-```
-
-must be something like: 
-```bash
-# unit tests
-$  docker exec -it payever-test_api_1 npm run test
+$ docker exec -it payever_api npm run test
 ```

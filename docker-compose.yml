@@ -12,6 +12,7 @@ services:
       - apiNetwork
 
   api:
+    container_name: payever_api
     build:
       dockerfile: Dockerfile
       context: .
